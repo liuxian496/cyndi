@@ -12,6 +12,7 @@ export default defineConfig({
                 index: "src/index.ts",
                 isEmptyString: "src/isEmptyString.ts",
                 printArrayItem: "src/printArrayItem.ts",
+                getPrefixNs:"src/getPrefixNs.ts"
             },
             name: "litten",
             fileName: "index",

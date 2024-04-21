@@ -1,0 +1,1 @@
+export { getPrefixNs } from "./util/getPrefixNs";
