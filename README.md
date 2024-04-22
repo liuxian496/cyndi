@@ -5,7 +5,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/liuxian496/cyndi)
 
 
-<p>Litten是一个React UI控件库，样式风格参考Google's Material Design，并做了适当取舍。键盘操作、读屏等可访问性，依据W3C「ARIA Authoring Practices Guide（APG）」进行开发。</p>
+<p>Cyndi 是一个JavaScript工具库。提供一些跨组件库、通用的方法。</p>
 
 ## 主页
 [github.io主页](https://liuxian496.github.io/cyndi/)
@@ -20,6 +20,18 @@ npm i cyndi
 cyndi，依赖下面的库。
 1. [react](https://github.com/facebook/react)
 2. [lodash](https://github.com/lodash/lodash)
+
+## 功能
+
+### getPrefixNs
+获取控件css前缀
+
+### isEmptyString
+检测是否是空字符串
+
+### printArrayItem
+遍历对象数组，将对的每个属性输出成字符串，不递归遍历对象属性的子属性
+
 
 ## 如果你想请我喝一杯蜜雪冰城（Buy Me a Mixue Ice Cream & Tea）
 <img src=".\\public\\wechat.jpg" height="360">
