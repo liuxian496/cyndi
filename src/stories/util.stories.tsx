@@ -5,7 +5,7 @@ import { IsEmptyStringTest } from "../test/util/isEmptyStringTest";
 import { PrintArrayItemTest } from "../test/util/printArrayItemTest";
 
 export default {
-    title: "Example/Util",
+    title: "Example/Util"
 } as Meta;
 
 export type UtilStory = StoryObj;
