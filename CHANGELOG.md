@@ -1,3 +1,12 @@
+# [0.2.0](https://github.com/liuxian496/cyndi/compare/v0.1.3...v0.2.0) (2024-04-24)
+
+
+### Features
+
+* defaultPrefix支持设置默认前缀（defaultPrefix） ([a7a7fb8](https://github.com/liuxian496/cyndi/commit/a7a7fb8be589c50290e2b66118027793665c896c))
+
+
+
 ## [0.1.3](https://github.com/liuxian496/cyndi/compare/v0.1.2...v0.1.3) (2024-04-22)
 
 

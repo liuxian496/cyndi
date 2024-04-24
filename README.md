@@ -16,23 +16,49 @@
 ### 1. 安装cyndi
 npm i cyndi
 
-### 2. litten依赖的库
+### 2. cyndi依赖的库
 cyndi，依赖下面的库。
-1. [react](https://github.com/facebook/react)
-2. [lodash](https://github.com/lodash/lodash)
+1. [lodash](https://github.com/lodash/lodash)
 
 ## 功能
 
 ### getPrefixNs
-获取控件css前缀
+```
+/**
+ * 获取控件css前缀
+ * @param componentName 控件名称 {string}
+ * @param customizePrefix 用户自定义前缀 {string}
+ * @param defaultPrefix 默认前缀 {string}
+ * @returns prefix 控件css类前缀 {string}
+ */
+export declare function getPrefixNs(componentName: string, customizePrefix?: string, defaultPrefix?: string): string;
 
+```
 ### isEmptyString
-检测是否是空字符串
+
+```
+/**
+ * 检测是否是空字符串
+ * @param 需要判断的值 {any}
+ * @returns isString 是否是空字符串 {boolean}
+ */
+export declare function isEmptyString(str: unknown): boolean;
+
+```
 
 ### printArrayItem
-遍历对象数组，将对的每个属性输出成字符串，不递归遍历对象属性的子属性
+```
+
+/**
+ * 遍历对象数组，将对象的每个属性输出成字符串，不递归遍历对象属性的子属性
+ * @param list 待遍历的数组
+ * @returns 遍历后拼装的字符串
+ */
+export declare function printArrayItem(list?: object[]): string;
+
+```
 
 
-## 如果你想请我喝一杯蜜雪冰城（Buy Me a Mixue Ice Cream & Tea）
+## 如果你想请我喝一杯咖啡（Buy Me a Coffee）
 <img src=".\\public\\wechat.jpg" height="360">
 <img src=".\\public\\alipay.jpg" height="360">

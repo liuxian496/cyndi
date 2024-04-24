@@ -23,6 +23,7 @@ const config: StorybookConfig = {
           ...coverageConfig,
       },
   },
+    "@storybook/addon-mdx-gfm"
   ],
   framework: {
     name: "@storybook/react-vite",
