@@ -28,7 +28,7 @@ cyndi，依赖下面的库。
  * 获取控件css前缀
  * @param componentName 控件名称 {string}
  * @param customizePrefix 用户自定义前缀 {string}
- * @param defaultPrefix 默认前缀前缀 {string}
+ * @param defaultPrefix 默认前缀 {string}
  * @returns prefix 控件css类前缀 {string}
  */
 export declare function getPrefixNs(componentName: string, customizePrefix?: string, defaultPrefix?: string): string;
