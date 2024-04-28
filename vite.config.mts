@@ -15,7 +15,7 @@ export default defineConfig({
                 printArrayItem: "src/printArrayItem.ts",
                 getPrefixNs:"src/getPrefixNs.ts"
             },
-            name: "litten",
+            name: "cyndi",
             fileName: "index",
         },
         outDir: "dist",
