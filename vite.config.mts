@@ -13,19 +13,27 @@ export default defineConfig({
                 index: "src/index.ts",
                 isEmptyString: "src/isEmptyString.ts",
                 printArrayItem: "src/printArrayItem.ts",
-                getPrefixNs:"src/getPrefixNs.ts"
+                getPrefixNs: "src/getPrefixNs.ts",
             },
             name: "cyndi",
             fileName: "index",
         },
         outDir: "dist",
         rollupOptions: {
-            external: ["react", "react-dom", "react/jsx-runtime"],
+            external: [
+                "react",
+                "react-dom",
+                "react/jsx-runtime",
+                "lodash/isString",
+                "lodash/isArray",
+                "lodash/forOwn",
+            ],
             output: [
                 {
                     manualChunks: (id: string) => {
                         if (id.includes("node_modules")) {
                             if (id.includes("lodash")) {
+                                console.log("id");
                                 return "lodash";
                             }
                             return "vender";
@@ -41,7 +49,7 @@ export default defineConfig({
     },
     plugins: [
         react(),
-        dts()
-        // visualizer(),
+        dts(),
+        // visualizer()
     ],
 });
