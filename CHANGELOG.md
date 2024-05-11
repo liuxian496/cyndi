@@ -1,3 +1,11 @@
+# [1.0.0](https://github.com/liuxian496/cyndi/compare/v0.2.2...v1.0.0) (2024-05-11)
+
+
+
+## [0.2.2](https://github.com/liuxian496/cyndi/compare/v0.2.1...v0.2.2) (2024-05-11)
+
+
+
 ## [0.2.1](https://github.com/liuxian496/cyndi/compare/v0.2.0...v0.2.1) (2024-04-28)
 
 
