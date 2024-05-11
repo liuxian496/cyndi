@@ -17,8 +17,9 @@
 npm i cyndi
 
 ### 2. cyndi依赖的库
-cyndi，依赖下面的库。
-1. [lodash](https://github.com/lodash/lodash)
+[lodash](https://github.com/lodash/lodash)
+
+上述依赖，打包时不包含，需要使用的项目自行引入。
 
 ## 功能
 
