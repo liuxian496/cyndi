@@ -1,5 +1,4 @@
-import "litten/dist/assets/button.css";
-import { useState } from "react";
+import React, { useState } from "react";
 
 import { userEvent, within, expect } from "@storybook/test";
 import { UtilStory } from "../../stories/util.stories";
