@@ -11,6 +11,7 @@ const coverageConfig: AddonOptionsBabel = {
 
 const config: StorybookConfig = {
     stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
+
     addons: [
         "@storybook/addon-onboarding",
         "@storybook/addon-links",
@@ -25,12 +26,16 @@ const config: StorybookConfig = {
         },
         "@storybook/addon-mdx-gfm",
     ],
+
     framework: {
         name: "@storybook/react-vite",
         options: {},
     },
-    docs: {
-        autodocs: "tag",
-    },
+
+    docs: {},
+
+    typescript: {
+        reactDocgen: "react-docgen-typescript"
+    }
 };
 export default config;
