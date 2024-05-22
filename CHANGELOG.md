@@ -1,3 +1,12 @@
+# [1.1.0](https://github.com/liuxian496/cyndi/compare/v1.0.0...v1.1.0) (2024-05-22)
+
+
+### Features
+
+* 添加updateScrollTop ([f2218ff](https://github.com/liuxian496/cyndi/commit/f2218fff86b2f29c2e190693e9f1a9291c1b85c3))
+
+
+
 # [1.0.0](https://github.com/liuxian496/cyndi/compare/v0.2.2...v1.0.0) (2024-05-11)
 
 
