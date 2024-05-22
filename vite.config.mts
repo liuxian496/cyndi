@@ -3,6 +3,25 @@ import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
 // import { visualizer } from "rollup-plugin-visualizer";
 
+const utils = [
+    "getPrefixNs",
+    "isEmptyString",
+    "printArrayItem",
+    "updateScroll",
+];
+
+type entry = {
+    [index: string]: string;
+};
+
+function getEntry(components: string[]) {
+    const value: entry = {};
+    components.map((component) => {
+        value[component] = `src/${component}.ts`;
+    });
+    return value;
+}
+
 // https://vitejs.dev/config/
 export default defineConfig({
     build: {
@@ -11,9 +30,7 @@ export default defineConfig({
         lib: {
             entry: {
                 index: "src/index.ts",
-                isEmptyString: "src/isEmptyString.ts",
-                printArrayItem: "src/printArrayItem.ts",
-                getPrefixNs: "src/getPrefixNs.ts",
+                ...getEntry(utils),
             },
             name: "cyndi",
             fileName: "index",
@@ -30,6 +47,7 @@ export default defineConfig({
             ],
             output: [
                 {
+                    format: "es",
                     manualChunks: (id: string) => {
                         if (id.includes("node_modules")) {
                             if (id.includes("lodash")) {
@@ -38,8 +56,10 @@ export default defineConfig({
                             }
                             return "vender";
                         }
+                        if (id.includes("util/updateScroll")) {
+                            return "updateScroll"
+                        }
                     },
-                    format: "es",
                     chunkFileNames: "chunks/[name].[hash].js",
                     assetFileNames: "assets/[name][extname]",
                     entryFileNames: "[name].js",
